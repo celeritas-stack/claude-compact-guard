@@ -1,0 +1,11 @@
+{
+  "name": "claude-compact-guard",
+  "version": "1.0.0",
+  "description": "Saves what matters before compaction destroys it. Context recovery after /compact.",
+  "keywords": ["claude-code", "claude-code-plugin", "compact", "context", "memory", "anthropic"],
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
+    "dotenv": "^16.4.5"
+  }
+}

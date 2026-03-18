@@ -1,0 +1,31 @@
+{
+  "name": "claude-compact-guard",
+  "version": "1.0.0",
+  "description": "Saves what matters before compaction destroys it. Recovery injection after /compact.",
+  "hooks": {
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/pre-compact.js",
+            "timeout": 8000,
+            "async": false
+          }
+        ]
+      }
+    ],
+    "PostCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/post-compact.js",
+            "timeout": 8000,
+            "async": false
+          }
+        ]
+      }
+    ]
+  }
+}
