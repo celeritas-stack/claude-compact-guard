@@ -1,7 +1,10 @@
 {
   "name": "claude-compact-guard",
   "version": "1.0.0",
-  "description": "Saves what matters before compaction destroys it. Recovery injection after /compact.",
+  "description": "Saves critical context before /compact destroys it. Reinjects after. Zero context loss.",
+  "author": {
+    "name": "celeritas-stack"
+  },
   "hooks": {
     "PreCompact": [
       {
