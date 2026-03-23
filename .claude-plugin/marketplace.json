@@ -1,0 +1,20 @@
+{
+  "name": "celeritas-stack",
+  "owner": {
+    "name": "celeritas-stack",
+    "email": ""
+  },
+  "plugins": [
+    {
+      "name": "claude-compact-guard",
+      "source": "./",
+      "description": "Saves critical context before /compact destroys it. Reinjects after. Zero context loss.",
+      "version": "1.0.0",
+      "author": {
+        "name": "celeritas-stack"
+      },
+      "category": "productivity",
+      "keywords": ["compact", "context", "memory", "postcompact", "hooks"]
+    }
+  ]
+}
